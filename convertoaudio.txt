@@ -26,7 +26,7 @@ def lambda_handler(event, context):
     # transform text with about 1,500 characters, we are dividing the 
     # post into blocks of approximately 1,000 characters.
     textBlocks = []
-    while (len(rest) > 1100):
+    while (len(rest) > 1100):  //
         begin = 0
         end = rest.find(".", 1000)
 
